@@ -1,0 +1,22 @@
+:root {
+  --main: #fff;
+  --secondary: #E4216D;
+  --tertiary: #DF9713;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: .36px;
+  color: var(--main);
+}
+#menu {
+  display: none;
+}
