@@ -10,8 +10,9 @@
     <div class="row main-content inner-wrapper">
     </div>
     <div class="row bottom bottom-content">
-      G01 - 850 Whitehorse Road Box Hill 3128<br>
-      Mon Closed | Tue - Sun Lunch 11:30 am - 3pm Dinner 5:30 pm - 9pm
+      <?= get_field('address')?>
+      <br>
+      <?= get_field('opening_hours')?>
     </div>
   </div>
   <div class="section about-section" id="about">
@@ -20,10 +21,10 @@
         <div class="col detail-col">
           <div class="col-wrapper">
             <div class="image-wrapper">
-              <img src="<?= get_field('bbq_image_1')?>" alt="Yakiniku Japanese Barbeque">
+              <img src="<?= get_field('bbq_image')?>" alt="Yakiniku Japanese Barbeque">
             </div>
             <div class="content-wrapper">
-              <h3>Yakiniku<br>Japanese Barbeque</h3>
+              <h3><span></span></h3>
               <?= get_field('bbq_content')?>
             </div>
           </div>
