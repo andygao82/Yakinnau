@@ -5,9 +5,10 @@
   */
 ?>
 <?php get_header(); ?>
-<div class="section banner-section">
-  <div class="container">
+  <div class="section banner-section">
     <div class="row main-content inner-wrapper">
+      <div class="container">
+      </div>
     </div>
     <div class="row bottom bottom-content">
       <?= get_field('address')?>
@@ -18,20 +19,51 @@
   <div class="section about-section" id="about">
     <div class="container">
       <div class="row">
-        <div class="col detail-col">
+        <div class="col detail-col glass-bg">
           <div class="col-wrapper">
             <div class="image-wrapper">
               <img src="<?= get_field('bbq_image')?>" alt="Yakiniku Japanese Barbeque">
             </div>
             <div class="content-wrapper">
-              <h3><span></span></h3>
-              <?= get_field('bbq_content')?>
+              <h3>
+                <span><?= get_field("bbq_heading")?></span>
+                <span class="yellow-font"><?= get_field("bbq_sub_headin")?></span>
+              </h3>
+              <div class="content-content">
+                <?= get_field('bbq_description')?>
+              </div>
             </div>
           </div>
         </div>
         <div class="col image-col">
-          <div class="image-wrapper">
-            <img src="<?= get_field('bbq_image_2')?>" alt="Yakiniku">
+          <div class="image-col-wrapper">
+            <img class="img-1" src="<?= get_template_directory_uri() . '/images/happy.svg'?>" alt="Yakiniku">
+            <img class="img-2" src="<?= get_template_directory_uri() . '/images/top2.svg'?>" alt="Yakiniku">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col detail-col glass-bg">
+          <div class="col-wrapper">
+            <div class="image-wrapper">
+              <img src="<?= get_field('dining_image')?>" alt="Japanese Modern Dining">
+            </div>
+            <div class="content-wrapper">
+              <h3>
+                <span class="yellow-font"><?= get_field("dining_heading")?></span>
+                <span class="yellow-font"><?= get_field("dining_sub_heading")?></span>
+              </h3>
+              <div class="content-content">
+                <?= get_field('dining__description')?>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col image-col with-heading">
+          <div class="image-col-wrapper">
+            <h3 class="image-heading">PRIMIUM <span class="yellow-font">JAPANESE</span> DINING AND <span class="yellow-font">YAKINU</di> EXPERIENCE</h3>
+            <img src="<?= get_template_directory_uri() . '/images/top4.svg'?>" alt="Japanese Modern Dining">
           </div>
         </div>
       </div>
@@ -40,39 +72,24 @@
         <div class="col detail-col">
           <div class="col-wrapper">
             <div class="image-wrapper">
-              <img src="<?= get_field('dining_image_1')?>" alt="Japanese Modern Dining">
+              <img src="<?= get_field('menu_image')?>" alt="View Seasonal Menu">
             </div>
             <div class="content-wrapper">
-              <h3>Japanese<br>Modern Dining</h3>
-              <?= get_field('dining_content')?>
-            </div>
-          </div>
-        </div>
-        <div class="col image-col">
-          <div class="image-wrapper">
-            <img src="<?= get_field('dining_image_2')?>" alt="Japanese Modern Dining">
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col detail-col">
-          <div class="col-wrapper">
-            <div class="image-wrapper">
-              <img src="<?= get_field('menu_image_1')?>" alt="View Seasonal Menu">
-            </div>
-            <div class="content-wrapper">
-              <?= get_field('menu_content')?>
+              <div class="content-content">
+                <?= get_field('menu_description')?>
+              </div>
               <a class="button brown" href="#">View Seasonal Menu</a>
             </div>
           </div>
         </div>
         <div class="col image-col">
-          <div class="image-wrapper">
-            <img src="<?= get_field('menu_image_2')?>" alt="View Seasonal Menu">
+          <div class="image-col-wrapper">
+            <img src="<?= get_template_directory_uri() . '/images/mid1.svg'?>" alt="Japanese Modern Dining">
+            <span class="horizontal-heading">PREMIUM JAPANESE DINING AND <br>YAKINIKU EXPERIENCE</span>
           </div>
         </div>
       </div>
+      
     </div>
   </div>
   <div class="section reservation-section" id="reservation">
