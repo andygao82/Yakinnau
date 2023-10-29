@@ -35,14 +35,18 @@
               </ul>
             </div>
             <div class="footer-menu-col social-media">
-              <a href="#" target="_blank"></a>
-              <a href="#" target="_blank"></a>
+              <a href="#" target="_blank">
+                <img src="<?= get_template_directory_uri() . '/images/instagram.svg'?>" alt="Yakinau">
+              </a>
+              <a href="#" target="_blank">
+                <img src="<?= get_template_directory_uri() . '/images/facebook.svg'?>" alt="Yakinau">
+              </a>
             </div>
           </div>
         </div>
       </div>
       <div id="copyright">
-        &copy; <?php echo esc_html( date_i18n( __( 'Y', 'blankslate' ) ) ); ?> <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+        &copy; <?php echo esc_html( date_i18n( __( 'Y', 'blankslate' ) ) ); ?> <?php echo esc_html( get_bloginfo( 'name' ) ); ?> All Right Reserved
       </div>
     </footer>
   </div>

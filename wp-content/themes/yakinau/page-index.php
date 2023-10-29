@@ -8,6 +8,24 @@
   <div class="section banner-section">
     <div class="row main-content inner-wrapper">
       <div class="container">
+        <div class="inner-wrapper">
+          <img class="banner-image" id="banner-img-1" src="<?= get_template_directory_uri() . '/images/top1.svg'?>" alt="Yakinau">
+          <img class="banner-image" id="banner-img-2" src="<?= get_template_directory_uri() . '/images/top2.svg'?>" alt="Yakinau">
+          <img class="banner-image" id="banner-img-3" src="<?= get_template_directory_uri() . '/images/top3.svg'?>" alt="Yakinau">
+          <img class="banner-image" id="banner-img-4" src="<?= get_template_directory_uri() . '/images/beer.svg'?>" alt="Yakinau">
+          <img class="banner-image" id="banner-img-5" src="<?= get_template_directory_uri() . '/images/top4.svg'?>" alt="Yakinau">
+          <img class="banner-image" id="banner-img-6" src="<?= get_template_directory_uri() . '/images/mid1.svg'?>" alt="Yakinau">
+          <img class="banner-image" id="banner-img-7" src="<?= get_template_directory_uri() . '/images/mid2.svg'?>" alt="Yakinau">
+          <img class="banner-image" id="banner-img-8" src="<?= get_template_directory_uri() . '/images/bottom1.svg'?>" alt="Yakinau">
+          <img class="banner-image" id="banner-img-9" src="<?= get_template_directory_uri() . '/images/flame.svg'?>" alt="Yakinau">
+          <img class="banner-image" id="banner-img-10" src="<?= get_template_directory_uri() . '/images/bottom1.svg'?>" alt="Yakinau">
+          <img class="banner-image" id="banner-img-11" src="<?= get_template_directory_uri() . '/images/last1.svg'?>" alt="Yakinau">
+          <div class="banner-wrapper">
+            <img class="banner-image" id="banner-img-11" src="<?= get_template_directory_uri() . '/images/tem.jpg'?>" alt="Yakinau">
+            <a class="button pink" href="#">BOOK NOW</a>
+            <a href="tel:03 9898 8826" class="link" target="_blank">03 9898 8826</a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="row bottom bottom-content">
