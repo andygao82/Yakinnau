@@ -6,7 +6,7 @@
 ?>
 <?php get_header(); ?>
   <div class="section banner-section">
-    <div class="row main-content inner-wrapper">
+    <div class="main-content">
       <div class="container">
         <div class="inner-wrapper">
           <img class="banner-image" id="banner-img-1" src="<?= get_template_directory_uri() . '/images/top1.svg'?>" alt="Yakinau">
@@ -19,16 +19,17 @@
           <img class="banner-image" id="banner-img-8" src="<?= get_template_directory_uri() . '/images/bottom1.svg'?>" alt="Yakinau">
           <img class="banner-image" id="banner-img-9" src="<?= get_template_directory_uri() . '/images/flame.svg'?>" alt="Yakinau">
           <img class="banner-image" id="banner-img-10" src="<?= get_template_directory_uri() . '/images/bottom1.svg'?>" alt="Yakinau">
-          <img class="banner-image" id="banner-img-11" src="<?= get_template_directory_uri() . '/images/last1.svg'?>" alt="Yakinau">
+          <img class="banner-image" id="banner-img-11" src="<?= get_template_directory_uri() . '/images/last2.svg'?>" alt="Yakinau">
+          <img class="banner-image" id="banner-img-12" src="<?= get_template_directory_uri() . '/images/last1.svg'?>" alt="Yakinau">
           <div class="banner-wrapper">
-            <img class="banner-image" id="banner-img-11" src="<?= get_template_directory_uri() . '/images/tem.jpg'?>" alt="Yakinau">
+            <img class="banner-wrapper-image" src="<?= get_template_directory_uri() . '/images/tem.jpg'?>" alt="Yakinau">
             <a class="button pink" href="#">BOOK NOW</a>
-            <a href="tel:03 9898 8826" class="link" target="_blank">03 9898 8826</a>
+            <a href="tel:03 9898 8826" class="link" target="_blank">Or call 03 9898 8826</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="row bottom bottom-content">
+    <div class="bottom bottom-content">
       <?= get_field('address')?>
       <br>
       <?= get_field('opening_hours')?>

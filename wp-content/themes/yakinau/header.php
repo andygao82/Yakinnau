@@ -16,7 +16,7 @@
   <header id="header" role="banner">
     <div class="container">
       <div class="header-logo"><img src="<?= get_template_directory_uri() . '/images/logo.svg'?>" alt="Yakinau"></div>
-      <a href="#" class="link book-link" target="_blank">Book Now</a>
+      <a href="#" class="book-link" target="_blank">Book Now</a>
       <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
       <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
       </nav>
