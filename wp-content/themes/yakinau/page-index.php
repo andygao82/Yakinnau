@@ -89,34 +89,37 @@
           </div>
         </div>
       </div>
-      
     </div>
   </div>
-  <div class="section reservation-section" id="reservation">
+  <div class="section bottom-section reservation-section" id="reservation">
     <div class="container">
       <div class="row">
         <div class="col content">
-          <h2><?= get_field('reservation_heading')?></h2>
-          <div class="text">
-            <?= get_field('reservation_content')?>
+          <div class="col-wrapper">
+            <h2><?= get_field('drink_heading')?></h2>
+            <div class="text">
+              <?= get_field('drink_description')?>
+            </div>
+            <a class="button brown" href="#">Make a reservation</a>
           </div>
-          <a class="button brown" href="#">Make a reservation</a>
         </div>
         <div class="col"></div>
       </div>
     </div>
   </div>
-  <div class="section function-section" id="function">
+  <div class="section bottom-section function-section" id="function">
     <div class="container">
       <div class="row">
-        <div class="col content">
-          <h2><?= get_field('function_heading')?></h2>
-          <div class="text">
-            <?= get_field('function_content')?>
-          </div>
-          <a class="button pink" href="mailto:yakinau@yakinau.com.au">Send Enquiry</a>
-        </div>
         <div class="col"></div>
+        <div class="col content">
+          <div class="col-wrapper">
+            <h2><?= get_field('function_heading')?></h2>
+            <div class="text">
+              <?= get_field('function_description')?>
+            </div>
+            <a class="button pink" href="mailto:yakinau@yakinau.com.au">Send Enquiry</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -124,18 +127,16 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="buttons">
-            <a href="#" class="button reservation-button" target="_blank">MAKE A RESERVATION</a>
-            <span>OR</span>
-            <a href="#" class="button reservation-button" target="_blank">ORDER TAKE AWAY</a>
+          <div class="col-wrapper">
+            <div class="buttons">
+              <a href="#" class="button reservation-button" target="_blank">MAKE A RESERVATION</a>
+              <span>OR</span>
+              <a href="#" class="button reservation-button" target="_blank">ORDER TAKE AWAY</a>
+            </div>
+            <a href="#" class="link" target="_blank">View our seasonal menu</a>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <a href="#" class="link" target="_blank">View our seasonal menu</a>
-        </div>
-      </div>    
     </div>
   </div>
 </div>
