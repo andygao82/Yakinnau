@@ -109,10 +109,18 @@ h3 {
 }
 #wrapper {
   background-image: url(../images/main-bg.jpg);
-  background-position: center 100%;
+  background-position-x: 50%;
+  background-position-y: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all 3s ease-in-out;
   background-attachment: fixed;
+}
+#wrapper.active {
+  background-position-y: 50%;
+}
+#wrapper.bg-done {
+  transition: all .2s ease-in-out;
 }
 #header {
   position: sticky;
@@ -462,4 +470,15 @@ h3 {
     justify-content: center;
     align-items: center;
   }
+}
+@-webkit-keyframes bgLoading {
+	0%, 20%, 50%, 80%, 100% {background-position-y: 50%;}	
+}
+
+@-moz-keyframes bgLoading {
+	0%, 20%, 50%, 80%, 100% {background-position-y: 50%;}
+}
+
+@-o-keyframes bgLoading {
+	0%, 20%, 50%, 80%, 100% {background-position-y: 50%;}
 }
