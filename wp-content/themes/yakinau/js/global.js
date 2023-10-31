@@ -9,6 +9,6 @@ document.addEventListener( 'DOMContentLoaded', function () {
   }, 3000)
   window.addEventListener('scroll', function () {
     const scrollValue = window.scrollY;
-    siteWrapper.style.backgroundPositionY = 'calc(50% + '+ scrollValue * .2 + 'px)';
+    siteWrapper.style.backgroundPositionY = 'calc(50% + '+ scrollValue * .1 + 'px)';
   });
 });
