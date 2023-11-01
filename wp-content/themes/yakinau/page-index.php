@@ -5,23 +5,23 @@
   */
 ?>
 <?php get_header(); ?>
-  <div class="section banner-section">
+  <div class="section banner-section" id="banner-section">
     <div class="main-content">
       <div class="container">
         <div class="inner-wrapper">
-          <img class="banner-image" id="banner-img-1" src="<?= get_template_directory_uri() . '/images/top1.svg'?>" alt="Yakinau">
-          <img class="banner-image" id="banner-img-2" src="<?= get_template_directory_uri() . '/images/top2.svg'?>" alt="Yakinau">
-          <img class="banner-image" id="banner-img-3" src="<?= get_template_directory_uri() . '/images/top3.svg'?>" alt="Yakinau">
-          <img class="banner-image" id="banner-img-4" src="<?= get_template_directory_uri() . '/images/beer.svg'?>" alt="Yakinau">
-          <img class="banner-image" id="banner-img-5" src="<?= get_template_directory_uri() . '/images/top4.svg'?>" alt="Yakinau">
-          <img class="banner-image" id="banner-img-6" src="<?= get_template_directory_uri() . '/images/mid1.svg'?>" alt="Yakinau">
-          <img class="banner-image" id="banner-img-7" src="<?= get_template_directory_uri() . '/images/mid2.svg'?>" alt="Yakinau">
-          <img class="banner-image" id="banner-img-8" src="<?= get_template_directory_uri() . '/images/bottom1.svg'?>" alt="Yakinau">
-          <img class="banner-image" id="banner-img-9" src="<?= get_template_directory_uri() . '/images/flame.svg'?>" alt="Yakinau">
-          <img class="banner-image" id="banner-img-10" src="<?= get_template_directory_uri() . '/images/bottom1.svg'?>" alt="Yakinau">
-          <img class="banner-image" id="banner-img-11" src="<?= get_template_directory_uri() . '/images/last2.svg'?>" alt="Yakinau">
-          <img class="banner-image" id="banner-img-12" src="<?= get_template_directory_uri() . '/images/last1.svg'?>" alt="Yakinau">
-          <div class="banner-wrapper">
+          <img class="banner-image fadeUp" id="banner-img-1" src="<?= get_template_directory_uri() . '/images/top1.svg'?>" alt="Yakinau">
+          <img class="banner-image fadeUp-1" id="banner-img-2" src="<?= get_template_directory_uri() . '/images/top2.svg'?>" alt="Yakinau">
+          <img class="banner-image fadeUp-1" id="banner-img-3" src="<?= get_template_directory_uri() . '/images/top3.svg'?>" alt="Yakinau">
+          <img class="banner-image fadeUp" id="banner-img-4" src="<?= get_template_directory_uri() . '/images/beer.svg'?>" alt="Yakinau">
+          <img class="banner-image fadeUp-1" id="banner-img-5" src="<?= get_template_directory_uri() . '/images/top4.svg'?>" alt="Yakinau">
+          <img class="banner-image fadeUp" id="banner-img-6" src="<?= get_template_directory_uri() . '/images/mid1.svg'?>" alt="Yakinau">
+          <img class="banner-image fadeUp-2" id="banner-img-7" src="<?= get_template_directory_uri() . '/images/mid2.svg'?>" alt="Yakinau">
+          <img class="banner-image fadeUp-3" id="banner-img-8" src="<?= get_template_directory_uri() . '/images/bottom1.svg'?>" alt="Yakinau">
+          <img class="banner-image fadeUp-3" id="banner-img-9" src="<?= get_template_directory_uri() . '/images/flame.svg'?>" alt="Yakinau">
+          <img class="banner-image fadeUp-2" id="banner-img-10" src="<?= get_template_directory_uri() . '/images/bottom1.svg'?>" alt="Yakinau">
+          <img class="banner-image fadeUp-4" id="banner-img-11" src="<?= get_template_directory_uri() . '/images/last2.svg'?>" alt="Yakinau">
+          <img class="banner-image fadeUp-5" id="banner-img-12" src="<?= get_template_directory_uri() . '/images/last1.svg'?>" alt="Yakinau">
+          <div class="banner-wrapper" id="banner-wrapper">
             <img class="banner-wrapper-image" src="<?= get_template_directory_uri() . '/images/banner-logo.svg'?>" alt="Yakinau">
             <a class="button pink" href="#">BOOK NOW</a>
             <a href="tel:03 9898 8826" class="link" target="_blank">Or call 03 9898 8826</a>
@@ -29,14 +29,14 @@
         </div>
       </div>
     </div>
-    <div class="bottom bottom-content">
+    <div class="bottom bottom-content" id="bottom-content">
       <?= get_field('address')?>
       <br>
       <?= get_field('opening_hours')?>
     </div>
   </div>
   <div class="section about-section" id="about">
-    <div class="container">
+    <div class="container" id="about-container">
       <div class="row">
         <div class="col detail-col glass-bg">
           <div class="col-wrapper">
@@ -158,6 +158,4 @@
       </div>
     </div>
   </div>
-</div>
-
 <?php get_footer(); ?>
