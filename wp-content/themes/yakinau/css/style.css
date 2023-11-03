@@ -122,7 +122,12 @@ h3 {
   transition: all 3s ease-in-out;
   background-attachment: fixed;
 }
-
+@media screen and (max-height: 1080px) {
+  #wrapper.init {
+    height: 1087px;
+    overflow-y: hidden;
+  } 
+}
 #wrapper.active {
   background-position-y: 50%;
 }

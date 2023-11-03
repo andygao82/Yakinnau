@@ -24,8 +24,6 @@ document.addEventListener( 'DOMContentLoaded', function () {
     bannerWrapper.classList.add('active');
   }, 6000)
 
-  let hasScrolled = false;
-
   window.addEventListener('scroll', function () {
     const scrollValue = window.scrollY;
     siteWrapper.style.backgroundPositionY = 'calc(50% + '+ scrollValue * .1 + 'px)';
@@ -35,31 +33,12 @@ document.addEventListener( 'DOMContentLoaded', function () {
       }, 1000)
     }
 
-    if (scrollValue > 149 && !hasScrolled) {
+    if (scrollValue > 149 ) {
       bottomContent.classList.add('fadeAway');
-      const targetElement = document.getElementById("about-container");
-      const offsetTop = targetElement.offsetTop;
-      const elementHeight = targetElement.offsetHeight;
-      const scrollPosition = window.scrollY;
-      const triggerPosition = offsetTop + elementHeight - window.innerHeight;
 
-      if (scrollPosition >= triggerPosition) {
-          scrollToAbout();
-          hasScrolled = true;
-      }
-      console.log(hasScrolled)
     }
 
-    function scrollToAbout() {
-      const targetElement = document.getElementById("about-container");
-      const offsetTop = targetElement.offsetTop;
-      const duration = 1000; // 1000 milliseconds (1 second)
-
-      window.scrollTo({
-          top: offsetTop,
-          behavior: "smooth"
-      });
-    }
+  
     
   });
 
