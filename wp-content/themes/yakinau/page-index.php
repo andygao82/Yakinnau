@@ -5,6 +5,7 @@
   */
 ?>
 <?php get_header(); ?>
+  <div class="bg-mobile"></div>
   <div class="section banner-section" id="banner-section">
     <div class="main-content">
       <div class="container">
