@@ -134,7 +134,7 @@ h3 {
   color: var(--tertiary);
 }
 #wrapper {
-  background-image: url(../images/main-bg.jpg);
+  background-image: url(../images/main-bg-1.jpg);
   background-position-x: 50%;
   background-position-y: 100%;
   background-repeat: no-repeat;
@@ -495,7 +495,7 @@ h3 {
   }
 }
 .function-section {
-  background-image: url('../images/dcd.jpg');
+  background-image: url('../images/dcd-1.jpg');
   &:before {
     left: unset;
     right: 0;
