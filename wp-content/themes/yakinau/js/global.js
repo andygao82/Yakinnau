@@ -14,6 +14,12 @@ document.addEventListener( 'DOMContentLoaded', function () {
   const reservationButton = document.getElementById('reservation-button');
   const functionButton = document.getElementById('function-button');
 
+  const laptopQuery = window.matchMedia("(max-width: 1599px)");
+  const ipadLargeQuery = window.matchMedia("(max-width: 1399px)");
+  const ipadMediumQuery = window.matchMedia("(max-width: 1199px)");
+  const ipadSmallQuery = window.matchMedia("(max-width: 991px)");
+  const mobileQuery = window.matchMedia("(max-width: 767px)");
+
   function btnClickToDiv (button,targetElement) {
     button.addEventListener("click", function(event) {
       event.preventDefault();
@@ -44,9 +50,16 @@ document.addEventListener( 'DOMContentLoaded', function () {
       bannerImage.classList.add('fadeUp--anime');
     })
   }, 1500)
-  setTimeout (function () {
-    bannerWrapper.classList.add('active');
-  }, 6000)
+  if (mobileQuery.matches) {
+    setTimeout (function () {
+      bannerWrapper.classList.add('active');
+    }, 2000)
+  } else {
+    setTimeout (function () {
+      bannerWrapper.classList.add('active');
+    }, 6000)
+  }
+
 
   inView('.fadeIn-left').on('enter', function (element) {
     element.classList.add('fadeIn--anime');
@@ -63,8 +76,12 @@ document.addEventListener( 'DOMContentLoaded', function () {
   
   window.addEventListener('scroll', function () {
     const scrollValue = window.scrollY;
-    siteWrapper.style.backgroundPositionY = 'calc(50% + '+ scrollValue * .1 + 'px)';
-    if(scrollValue == 149) {
+    if (ipadSmallQuery.matches) {
+      siteWrapper.style.backgroundPositionY = 'calc(0 + '+ scrollValue * .1 + 'px)';
+    } else {
+      siteWrapper.style.backgroundPositionY = 'calc(50% + '+ scrollValue * .1 + 'px)';
+    }
+    if(scrollValue >= 149) {
       setTimeout (function () {
         siteWrapper.classList.remove('init');
       }, 1000)
