@@ -77,7 +77,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
   window.addEventListener('scroll', function () {
     const scrollValue = window.scrollY;
     if (ipadSmallQuery.matches) {
-      siteWrapper.style.backgroundPositionY = 'calc(0 + '+ scrollValue * .1 + 'px)';
+      siteWrapper.style.backgroundPositionY = '50%';
     } else {
       siteWrapper.style.backgroundPositionY = 'calc(50% + '+ scrollValue * .1 + 'px)';
     }
