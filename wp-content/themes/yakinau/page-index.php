@@ -23,7 +23,7 @@
           <img class="banner-image fadeUp-5" id="banner-img-12" src="<?= get_template_directory_uri() . '/images/last1.svg'?>" alt="Yakinau">
           <div class="banner-wrapper" id="banner-wrapper">
             <img class="banner-wrapper-image" src="<?= get_template_directory_uri() . '/images/banner-logo.svg'?>" alt="Yakinau">
-            <a class="button pink" href="#"><span>BOOK NOW</span></a>
+            <a class="button pink" href="<?= get_field('reservation_link')?>"><span>BOOK NOW</span></a>
             <a href="tel:03 9898 8826" class="link" target="_blank">Or call 03 9898 8826</a>
           </div>
         </div>
@@ -97,7 +97,7 @@
               <div class="content-content">
                 <?= get_field('menu_description')?>
               </div>
-              <a class="button brown" href="#"><span>View Seasonal Menu</span></a>
+              <a class="button brown" href="<?= get_field('menu')?>"><span>View Seasonal Menu</span></a>
             </div>
           </div>
         </div>
@@ -119,7 +119,7 @@
             <div class="text">
               <?= get_field('drink_description')?>
             </div>
-            <a class="button brown" href="#"><span>Make a reservation</span></a>
+            <a class="button brown" href="<?= get_field('reservation_link')?>"><span>Make a reservation</span></a>
           </div>
         </div>
         <div class="col"></div>
@@ -136,7 +136,6 @@
             <div class="text">
               <?= get_field('function_description')?>
             </div>
-            <a class="button pink" href="mailto:yakinau@yakinau.com.au"><span>Send Enquiry</span></a>
           </div>
         </div>
       </div>
@@ -148,9 +147,9 @@
         <div class="col">
           <div class="col-wrapper">
             <div class="buttons">
-              <a href="#" class="button reservation-button" target="_blank"><span>MAKE A RESERVATION</span></a>
+              <a href="<?= get_field('reservation_link')?>" class="button reservation-button" target="_blank"><span>MAKE A RESERVATION</span></a>
               <span>OR</span>
-              <a href="#" class="button reservation-button" target="_blank"><span>ORDER TAKE AWAY</span></a>
+              <a href="<?= get_field('take_away_link')?>" class="button reservation-button" target="_blank"><span>ORDER TAKE AWAY</span></a>
             </div>
             <a href="#" class="link" target="_blank">View our seasonal menu</a>
           </div>
