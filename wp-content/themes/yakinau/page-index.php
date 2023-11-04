@@ -88,7 +88,7 @@
       </div>
 
       <div class="row fadeUp-0">
-        <div class="col detail-col fadeIn-left">
+        <div class="col detail-col  glass-bg fadeIn-left">
           <div class="col-wrapper">
             <div class="image-wrapper">
               <img src="<?= get_field('menu_image')?>" alt="View Seasonal Menu">
