@@ -748,18 +748,19 @@ h3 {
     }
   }
   .about-section {
+    padding-bottom: 0;
     .details-col {
       padding: 10px;
     }
   }
   .bottom-section {
-    padding: 60px 0;
+    padding: 100px 10px;
     .container {
       height: auto;
     }
   }
   .order-section {
-    padding: 60px 0; 
+    padding: 60px 10px; 
     height: auto;
     .buttons {
       flex-direction: column;
@@ -767,6 +768,7 @@ h3 {
     }
   }
   #footer {
+    padding: 60px 10px 0;
     .inner-wrapper {
       flex-direction: column;
       gap: 20px;
