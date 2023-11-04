@@ -721,9 +721,8 @@ h3 {
     display: none;
   }
   #wrapper {
-    background-attachment: fixed !important;
-    background-position-x: 50% !important;
-    background-position-y: 50% !important;
+    background-position: center center;
+    background-image: url(../images/bg-mobile.jpg);
   }
   body {
     font-size: 1.6rem;
