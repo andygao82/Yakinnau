@@ -720,6 +720,10 @@ h3 {
   .banner-image {
     display: none;
   }
+  #wrapper {
+    background-position-x: 50% !important;
+    background-position-y: 50% !important;
+  }
   body {
     font-size: 1.6rem;
   }
