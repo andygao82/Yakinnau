@@ -768,6 +768,7 @@ h3 {
     }
   }
   .bottom-section {
+    background-size: cover;
     padding: 100px 10px;
     .container {
       height: auto;
