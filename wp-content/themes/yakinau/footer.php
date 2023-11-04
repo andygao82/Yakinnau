@@ -26,12 +26,12 @@
             </div>
             <div class="footer-menu-col">
               <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">RESERVATION</a></li>
-                <li><a href="#">TAKE AWAY MENU</a></li>
-                <li><a href="#">FUNCTION</a></li>
-                <li><a href="#">GET VOUCHERS</a></li>
+                <li><a href="#" id="home-button">HOME</a></li>
+                <li><a href="#" id="about-button">ABOUT</a></li>
+                <li><a href="#" id="reservation-button">RESERVATION</a></li>
+                <li><a href="#" id="menu-button">TAKE AWAY MENU</a></li>
+                <li><a href="#" id="function-button">FUNCTION</a></li>
+                <li><a href="#" id="voucher-button">GET VOUCHERS</a></li>
               </ul>
             </div>
             <div class="footer-menu-col social-media">

@@ -23,7 +23,7 @@
           <img class="banner-image fadeUp-5" id="banner-img-12" src="<?= get_template_directory_uri() . '/images/last1.svg'?>" alt="Yakinau">
           <div class="banner-wrapper" id="banner-wrapper">
             <img class="banner-wrapper-image" src="<?= get_template_directory_uri() . '/images/banner-logo.svg'?>" alt="Yakinau">
-            <a class="button pink" href="#">BOOK NOW</a>
+            <a class="button pink" href="#"><span>BOOK NOW</span></a>
             <a href="tel:03 9898 8826" class="link" target="_blank">Or call 03 9898 8826</a>
           </div>
         </div>
@@ -38,7 +38,7 @@
   <div class="section about-section" id="about">
     <div class="container" id="about-container">
       <div class="row">
-        <div class="col detail-col glass-bg">
+        <div class="col detail-col glass-bg fadeIn-left">
           <div class="col-wrapper">
             <div class="image-wrapper">
               <img src="<?= get_field('bbq_image')?>" alt="Yakiniku Japanese Barbeque">
@@ -54,7 +54,7 @@
             </div>
           </div>
         </div>
-        <div class="col image-col">
+        <div class="col image-col fadeIn-right">
           <div class="image-col-wrapper">
             <img class="img-1" src="<?= get_template_directory_uri() . '/images/happy.svg'?>" alt="Yakiniku">
             <img class="img-2" src="<?= get_template_directory_uri() . '/images/top2.svg'?>" alt="Yakiniku">
@@ -62,8 +62,8 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col detail-col glass-bg">
+      <div class="row fadeUp-0">
+        <div class="col detail-col glass-bg fadeIn-right">
           <div class="col-wrapper">
             <div class="image-wrapper">
               <img src="<?= get_field('dining_image')?>" alt="Japanese Modern Dining">
@@ -79,7 +79,7 @@
             </div>
           </div>
         </div>
-        <div class="col image-col with-heading">
+        <div class="col image-col with-heading fadeIn-left">
           <div class="image-col-wrapper">
             <h3 class="image-heading">PRIMIUM <span class="yellow-font">JAPANESE</span> DINING AND <span class="yellow-font">YAKINU</di> EXPERIENCE</h3>
             <img src="<?= get_template_directory_uri() . '/images/top4.svg'?>" alt="Japanese Modern Dining">
@@ -87,8 +87,8 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col detail-col">
+      <div class="row fadeUp-0">
+        <div class="col detail-col fadeIn-left">
           <div class="col-wrapper">
             <div class="image-wrapper">
               <img src="<?= get_field('menu_image')?>" alt="View Seasonal Menu">
@@ -97,11 +97,11 @@
               <div class="content-content">
                 <?= get_field('menu_description')?>
               </div>
-              <a class="button brown" href="#">View Seasonal Menu</a>
+              <a class="button brown" href="#"><span>View Seasonal Menu</span></a>
             </div>
           </div>
         </div>
-        <div class="col image-col">
+        <div class="col image-col fadeIn-right">
           <div class="image-col-wrapper">
             <img src="<?= get_template_directory_uri() . '/images/mid1.svg'?>" alt="Japanese Modern Dining">
             <span class="horizontal-heading">PREMIUM JAPANESE DINING AND <br>YAKINIKU EXPERIENCE</span>
@@ -119,7 +119,7 @@
             <div class="text">
               <?= get_field('drink_description')?>
             </div>
-            <a class="button brown" href="#">Make a reservation</a>
+            <a class="button brown" href="#"><span>Make a reservation</span></a>
           </div>
         </div>
         <div class="col"></div>
@@ -136,7 +136,7 @@
             <div class="text">
               <?= get_field('function_description')?>
             </div>
-            <a class="button pink" href="mailto:yakinau@yakinau.com.au">Send Enquiry</a>
+            <a class="button pink" href="mailto:yakinau@yakinau.com.au"><span>Send Enquiry</span></a>
           </div>
         </div>
       </div>
@@ -148,9 +148,9 @@
         <div class="col">
           <div class="col-wrapper">
             <div class="buttons">
-              <a href="#" class="button reservation-button" target="_blank">MAKE A RESERVATION</a>
+              <a href="#" class="button reservation-button" target="_blank"><span>MAKE A RESERVATION</span></a>
               <span>OR</span>
-              <a href="#" class="button reservation-button" target="_blank">ORDER TAKE AWAY</a>
+              <a href="#" class="button reservation-button" target="_blank"><span>ORDER TAKE AWAY</span></a>
             </div>
             <a href="#" class="link" target="_blank">View our seasonal menu</a>
           </div>

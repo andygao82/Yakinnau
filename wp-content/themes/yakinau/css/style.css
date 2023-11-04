@@ -68,12 +68,32 @@ a {
   font-weight: 900;
   transition: all .5s ease-in-out;
   text-align: center;
-  &:hover {
+  position: relative;
+  overflow: hidden;
+  & span {
+    position: relative;
+    z-index: 1;
+  }
+  &:before {
+    content: '';
+    display: block;
+    width: 0;
+    position: absolute;
+    height: 100%;
+    transition: all .5s ease-in;
     background-color: var(--secondary);
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  &:hover {
+    &:before {
+      width: 100%;
+    }
   }
   &.brown {
     border-color: var(--tertiary);
-    &:hover {
+    &:before {
       background-color: var(--tertiary);
     }
   }
@@ -148,7 +168,7 @@ h3 {
   }
   .book-link {
     position: absolute;
-    right: 0;
+    right: 15px;
     color: var(--secondary);
   }
 }
@@ -428,8 +448,9 @@ h3 {
 .bottom-section {
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 100%;
   position: relative;
+  transition: all 2s ease-in-out;
   .container {
     max-width: 100%;
     height: 600px;
@@ -532,4 +553,31 @@ h3 {
 }
 .fadeUp--anime {
   transform: translate(0, 0);
+}
+.fadeIn-left {
+  opacity: 0;
+  visibility: hidden;
+  transition: 2s all ease-in-out;
+  transform: translateX(-200px);
+}
+.fadeIn-right {
+  opacity: 0;
+  visibility: hidden;
+  transition: 2s all ease-in-out;
+  transform: translateX(200px);
+}
+.fadeIn--anime {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, 0);
+}
+.fadeUp-0 {
+  transition: 2s all ease-in-out;
+  transform: translateY(100px);
+}
+.fadeUp-0--anime {
+  transform: translateY(-150px);
+}
+.bottom-section--anime {
+  background-size: 105%;
 }

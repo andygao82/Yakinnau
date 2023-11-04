@@ -2,10 +2,34 @@ document.addEventListener( 'DOMContentLoaded', function () {
   const body = document.querySelector('body');
   const bannerSection = document.getElementById('banner-section');
   const aboutSection = document.getElementById('about');
+  const reservationSection = document.getElementById('reservation');
+  const functionSection = document.getElementById('function');
   const siteWrapper = document.getElementById('wrapper');
   const bannerImages = document.querySelectorAll('.banner-image');
   const bannerWrapper = document.getElementById('banner-wrapper');
   const bottomContent = document.getElementById("bottom-content");
+
+  const homeButton = document.getElementById('home-button');
+  const aboutButton = document.getElementById('about-button');
+  const reservationButton = document.getElementById('reservation-button');
+  const functionButton = document.getElementById('function-button');
+
+  function btnClickToDiv (button,targetElement) {
+    button.addEventListener("click", function(event) {
+      event.preventDefault();
+      let targetOffsetTop = targetElement.offsetTop;
+      window.scrollTo({
+          top: targetOffsetTop,
+          behavior: 'smooth'
+      });
+    });
+  }
+
+  btnClickToDiv(homeButton, bannerSection)
+  btnClickToDiv(aboutButton, aboutSection)
+  btnClickToDiv(reservationButton, reservationSection)
+  btnClickToDiv(functionButton, functionSection)
+
   setTimeout (function () {
     body.classList.add('init');
   }, 500)
@@ -24,6 +48,19 @@ document.addEventListener( 'DOMContentLoaded', function () {
     bannerWrapper.classList.add('active');
   }, 6000)
 
+  inView('.fadeIn-left').on('enter', function (element) {
+    element.classList.add('fadeIn--anime');
+  });
+  inView('.fadeIn-right').on('enter', function (element) {
+    element.classList.add('fadeIn--anime');
+  });
+  inView('.fadeUp-0').on('enter', function (element) {
+    element.classList.add('fadeUp-0--anime');
+  });
+  inView('.bottom-section').on('enter', function (element) {
+    element.classList.add('bottom-section--anime');
+  });
+  
   window.addEventListener('scroll', function () {
     const scrollValue = window.scrollY;
     siteWrapper.style.backgroundPositionY = 'calc(50% + '+ scrollValue * .1 + 'px)';
@@ -32,14 +69,9 @@ document.addEventListener( 'DOMContentLoaded', function () {
         siteWrapper.classList.remove('init');
       }, 1000)
     }
-
     if (scrollValue > 149 ) {
       bottomContent.classList.add('fadeAway');
-
     }
-
-  
-    
   });
 
 });
