@@ -76,12 +76,13 @@ document.addEventListener( 'DOMContentLoaded', function () {
   
   window.addEventListener('scroll', function () {
     const scrollValue = window.scrollY;
+    console.log(scrollValue)
     if (ipadSmallQuery.matches) {
       siteWrapper.style.backgroundPositionY = '50%';
     } else {
       siteWrapper.style.backgroundPositionY = 'calc(50% + '+ scrollValue * .1 + 'px)';
     }
-    if(scrollValue >= 149) {
+    if(scrollValue >= 125) {
       setTimeout (function () {
         siteWrapper.classList.remove('init');
       }, 1000)
